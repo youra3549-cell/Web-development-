@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Café | Rajouri Garden</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --coffee: #3e2723;
+      --cream: #fff8e1;
+      --gold: #c59d5f;
+      --white: #ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cream);
+      color: var(--coffee);
+    }
+    header {
+      background: var(--coffee);
+    }
+    header .navbar-brand {
+      color: var(--gold);
+      font-weight: bold;
+    }
+    header .nav-link {
+      color: var(--white);
+      font-weight: 500;
+    }
+    header .nav-link:hover {
+      color: var(--gold);
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: var(--white);
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: var(--coffee);
+      font-weight: bold;
+    }
+    footer {
+      background: var(--coffee);
+      color: var(--white);
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="#">Aroma Café</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to Aroma Café</h1>
+    <p>Serving the best coffee and pastries in Rajouri Garden</p>
+    <a href="#menu" class="btn btn-lg" style="background: var(--gold); color: var(--white);">Explore Menu</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container text-center">
+    <h2>About Us</h2>
+    <p class="mt-3">At Aroma Café, we believe in blending taste with comfort. Located in the heart of Rajouri Garden Market, our café serves freshly brewed coffee, delicious pastries, and warm vibes.</p>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="container">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Coffee</h5>
+            <p class="card-text">Espresso, Cappuccino, Latte & more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Pastries</h5>
+            <p class="card-text">Freshly baked cheesecakes, muffins & croissants.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Sandwiches</h5>
+            <p class="card-text">Delicious sandwiches made with fresh ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container">
+    <h2 class="text-center mb-5">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg" 
+             alt="Cup of coffee" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg" 
+             alt="Coffee house interior" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg" 
+             alt="Pastry cheesecake" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.pexels.com/photos/4491395/pexels-photo-4491395.jpeg" 
+             alt="Sandwich with avocado and egg" class="img-fluid rounded shadow-sm" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/mwkajnwl" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message *</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn w-100" style="background: var(--gold); color: var(--white);">Send</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5>Location</h5>
+        <p>J37, Rajouri Garden Market, Rajouri, 110027</p>
+        <h5>Opening Hours</h5>
+        <p>Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun: 9:00 AM - 6:00 PM</p>
+        <!-- Google Map Embed -->
+        <div class="mt-3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.176581943624!2d77.1228904746508!3d28.643055884341474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02909e9f1dfd%3A0x3e6c4ab4c8f6a2c7!2sRajouri%20Garden%20Market!5e0!3m2!1sen!2sin!4v1696231502361!5m2!1sen!2sin" 
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius: 15px; box-shadow: 0 4px 15px rgb(197 157 95 / 0.3);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aroma Café | Rajouri Garden</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Bootstrap form validation
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+</html>
